@@ -1,36 +1,32 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>TO-DO List</title>
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
     <main>
-      <h1>TO-DO List</h1>
-      <p>My first paragraph.</p>
-
-      <label for="new-task">New Task:</label>
-      <input type="text" id="new-task" />
-      <button>Add</button>
-
-      <br><button>Hide Completed Tasks</button>
-
-      <ul>
-        <li>
-          <input type="checkbox" /> Cleaning your room
-        </li>
-        <li>
-          <input type="checkbox" /> Taking out trash
-        </li>
-        <li>
-          <input type="checkbox" /> Doing laundary
-        </li>
-        <li>
-          <input type="checkbox" /> Wash the dishes
-        </li>
-        <li>
-          <input type="checkbox" /> Cook dinner
-         </li>
+        <h1>TODO List</h1>
+        <div class="labeled-input">
+            <label for="new-task">New Task:</label>
+            <input type="text" id="new-task">
+            <button>Add</button>
+        </div>
+        <button id="hide-completed">Hide Completed Tasks</button>
+        <ul>
+            <li>
+                <input type="checkbox"> Task 1
+                <span class="task-options-container">︙
+                    <div class="task-options">
+                        <div class="delete-option">Delete</div>
+                        <hr>
+                        <div class="priority-option">Prioritize</div>
+                    </div>
+                </span>
+            </li>
         </ul>
     </main>
- </body>
+</body>
 </html>
