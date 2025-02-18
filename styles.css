@@ -29,7 +29,7 @@ li {
     padding: 0.4rem;
 }
 
-@media (max-wdith: 950px) {
+@media (max-width: 950px) {
     main {
         width: 100%;
         max-width: 100%;
